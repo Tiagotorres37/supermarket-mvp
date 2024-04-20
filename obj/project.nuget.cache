@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QmSsNzfLTiOgNPI22opGUetJtohxlpKowjK4mueSfGTAyp4T0yjZDr5tXj4E+hDiCCY8NM7EB0HNX7Gdec3Hpg==",
+  "dgSpecHash": "4fmpzkY/R0GVGPi+M3pAxGqsvAvVUVpMAhsccetzLf+FcV6ZPj2ZCZ6lpjN/oasaRbc4ChnXdAvifB1rJJdy0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\Supermarket-mvp\\Supermarket-mvp.csproj",
+  "projectFilePath": "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\SupermarketMVP\\Supermarket-mvp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
