@@ -10,25 +10,56 @@ using System.Threading.Tasks;
 
 namespace Supermarket_mvp._Repositories
 {
-    internal class PayModeRepository : BaseRepository, IPayModeRepository
+    internal class PayModelRepository : BaseRepository, IPayModeRepository
     {
-        public PayModeRepository(string connectionString) 
+        public PayModelRepository(string connectionString) 
         {
             this.connectionString = connectionString;
         }
         public void Add(PayModeModel payModeModel)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "UPDATE PayMode SET Pay_Mode_Name =@name, Pay_Mode_Observation = @observation WHERE Pay_Mode_Id = @id";
+                command.CommandText = "INSERT INTO PayMode VALUES (@name, @obesvation)";
+
+                command.Parameters.Add("@name", SqlDbType.NVarChar).Value = payModeModel.Name;
+                command.Parameters.Add("@observation", SqlDbType.NVarChar).Value = payModeModel.Observation;
+                command.Parameters.Add("id", SqlDbType.Int).Value = payModeModel.Id;
+                command.ExecuteNonQuery();
+            }
         }
 
         public void Delete(int id)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "DELETE FROM paymode WHere Pay_Mode_ID = @id";
+                command.Parameters.Add("@id", SqlDbType.Int).Value = id;
+                command.ExecuteNonQuery();
+            }
+
         }
 
         public void Edit(PayModeModel payModeModel)
         {
-            throw new NotImplementedException();
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand())
+            {
+                connection.Open();
+                command.Connection = connection;
+                command.CommandText = "UPDATE PayMode SET Pay_Mode_Name =@name, Pay_Mode_Observation = @observation WHERE Pay_Mode_Id = @id";
+                command.Parameters.Add("@name", SqlDbType.NVarChar).Value = payModeModel.Name;
+                command.Parameters.Add("@observation", SqlDbType.NVarChar).Value = payModeModel.Observation;
+                command.Parameters.Add("id", SqlDbType.Int).Value = payModeModel.Id;
+                command.ExecuteNonQuery();
+            }
         }
 
         public IEnumerable<PayModeModel> GetAll()
