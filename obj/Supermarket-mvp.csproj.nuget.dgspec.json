@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\SupermarketMVP\\Supermarket-mvp.csproj": {}
+    "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\Supermarket-mvp\\Supermarket-mvp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\SupermarketMVP\\Supermarket-mvp.csproj": {
+    "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\Supermarket-mvp\\Supermarket-mvp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\SupermarketMVP\\Supermarket-mvp.csproj",
+        "projectUniqueName": "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\Supermarket-mvp\\Supermarket-mvp.csproj",
         "projectName": "Supermarket-mvp",
-        "projectPath": "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\SupermarketMVP\\Supermarket-mvp.csproj",
+        "projectPath": "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\Supermarket-mvp\\Supermarket-mvp.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\SupermarketMVP\\obj\\",
+        "outputPath": "C:\\Users\\PC\\source\\repos\\Tiagotorres37\\Supermarket-mvp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
